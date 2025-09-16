@@ -66,14 +66,14 @@
   </header>
   <main>
     <section class="hero" style="display:flex; justify-content:center; padding:32px 20px 0 20px;" aria-hidden="false">
-      <figure style="width:720px; height:300px; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#fff; margin:0;">
-        <img id="top-product-img" src="lotion.png" alt="Bio Shield Family Lotion" style="width:100%; height:100%; object-fit:cover; display:block;">
+      <figure id="top-product-figure" style="width:720px; max-width:100%; height:auto; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:transparent; margin:0;">
+        <img id="top-product-img" src="lotion.png" alt="Bio Shield Family Lotion" style="display:block; max-width:720px; width:100%; height:auto; border-radius:12px;">
         <figcaption class="sr-only">Bio Shield Family Lotion product image</figcaption>
       </figure>
     </section>
 
     <section aria-labelledby="product-title" style="display:flex; justify-content:center;">
-      <article id="product-card" role="region" aria-labelledby="product-title" style="max-width:800px; text-align:center; padding:48px 20px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+  <article id="product-card" role="region" aria-labelledby="product-title" style="max-width:800px; text-align:center; padding:48px 20px; background:#fff; border-radius:12px; transition: transform 0.3s; box-shadow: none;">
         <h1 style="font-size:28px; margin-bottom:10px;">Bio Shield Family Lotion (3oz) — "Smooth Defense"</h1>
         <p style="font-size:18px; line-height:1.6; color:#333; margin-bottom:16px;">Protect your skin and nourish it. Our Family Lotion is perfect for kids and adults, combining gentle moisturizers with bug-repelling plant oils. It’s ideal for daily use — especially for sensitive skin.</p>
         <h3 style="font-size:18px; margin-bottom:8px;">Why You’ll Love It:</h3>
@@ -89,21 +89,21 @@
         // Emphasize product card when scrolled past the image
         (function(){
           const img = document.getElementById('top-product-img');
+          const figure = document.getElementById('top-product-figure');
           const card = document.getElementById('product-card');
           if(!img || !card) return;
-          const observer = new IntersectionObserver((entries) => {
+            const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-              if(entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
-                // user scrolled past top of image
-                card.style.transform = 'translateY(-6px) scale(1.02)';
-                card.style.boxShadow = '0 8px 24px rgba(0,0,0,0.18)';
-              } else {
-                card.style.transform = '';
-                card.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
-              }
+                if(entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
+                  // user scrolled past top of image
+                  card.style.transform = 'translateY(-6px) scale(1.02)';
+                } else {
+                  card.style.transform = '';
+                }
             });
           }, { threshold: [0], root: null });
-          observer.observe(img);
+            // observe the figure (container) for more stable trigger
+            observer.observe(figure || img);
         })();
       </script>
   </main>
