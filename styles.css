@@ -3,6 +3,10 @@ body {
       margin: 0;
       padding: 0;
     }
+    h1 {
+      text-align: center;
+      font-size: 45px;
+    }
     header {
       display: flex;
       align-items: center;
@@ -10,13 +14,13 @@ body {
       padding: 18px 40px;
       background: linear-gradient(90deg, #0f9d58, #10a22d);
       color: #fff;
+      position: relative;
+      z-index: 2; }
     header img {
       max-height: 60px;
       width: auto;
       margin-right: 32px;
       object-fit: contain;
-      border-radius: 16px;
-    }
     }
     nav {
       display: flex;
