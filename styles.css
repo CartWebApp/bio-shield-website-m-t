@@ -21,7 +21,10 @@ body {
       width: auto;
       margin-right: 32px;
       object-fit: contain;
+      border-radius: 16px; /* rounded corners to match other pages */
     }
+    /* Utility class if you want a perfectly circular logo */
+   
     nav {
       display: flex;
       gap: 32px;
@@ -47,4 +50,34 @@ body {
       white-space: nowrap !important;
       border: 0 !important;
     }
-    
+    h2 {
+      text-align:center
+    }
+    section > h3 {
+      justify-content: center;text-align: center;
+    }
+    /* Styles for services extensions box */
+    .services-extensions {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 24px;
+      background: #ffffffcc; /* slightly translucent white */
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      color: #1a1a1a;
+      position: relative;
+      z-index: 2;
+    }
+    .services-extensions-inner ol {
+      padding-left: 20px;
+      margin: 0;
+      list-style-position: inside;
+    }
+    .services-extensions-inner li {
+      margin: 18px 0;
+      text-align: left;
+    }
+    .services-extensions-inner li p {
+      margin: 8px 0 0 0;
+      line-height: 1.5;
+    }
