@@ -35,30 +35,22 @@
         <a href="contact.html" style="margin: 0;">Contact</a>
       </nav>
   </header>
-  <main>
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
-    <div class="contact-form">
-      <form action="submit_form.php" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </main>
-  <div class="email-subscribe">
     
-    </form>
-    <p id="subscribeSuccessMessage" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
-      Thank you for subscribing! Check your inbox for updates.
-    </p>
-  </div>
+  <main>
+    <section style="display: flex; justify-content: center; align-items: flex-start; min-height: 60vh; padding: 48px 0 0 0;">
+      <div style="background: rgba(255,255,255,0.98); border-radius: 22px; border: 2.5px solid #e0e0e0; box-shadow: 0 6px 32px rgba(0,0,0,0.13); padding: 48px 56px 44px 56px; color: #1a1a1a; min-width: 420px; max-width: 700px; width: 100%; text-align: center;">
+        <h1 style="font-size: 2.6rem; font-weight: bold; margin-bottom: 26px;">Contact Us</h1>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 24px; align-items: stretch;">
+          <label for="name" style="text-align:left; font-size: 1.35rem; font-weight: 500; color: #222;">Your Name</label>
+          <input type="text" id="name" name="name" required style="padding: 18px; border-radius: 9px; border: 1.5px solid #bdbdbd; font-size: 1.18rem; margin-bottom: 8px;">
+          <label for="email" style="text-align:left; font-size: 1.35rem; font-weight: 500; color: #222;">Email</label>
+          <input type="email" id="email" name="email" required style="padding: 18px; border-radius: 9px; border: 1.5px solid #bdbdbd; font-size: 1.18rem; margin-bottom: 8px;">
+          <label for="message" style="text-align:left; font-size: 1.35rem; font-weight: 500; color: #222;">Message</label>
+          <textarea id="message" name="message" rows="6" required style="padding: 18px; border-radius: 9px; border: 1.5px solid #bdbdbd; font-size: 1.18rem; resize: vertical; margin-bottom: 8px;"></textarea>
+          <button type="submit" style="font-size: 1.35rem; padding: 16px 0; background: linear-gradient(90deg, #0f9d58, #10a22d); color: #fff; border: none; border-radius: 9px; font-weight: bold; margin-top: 10px; cursor: pointer;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -65,26 +65,54 @@
       </nav>
   </header>
   <main>
-    <section class="hero" style="display:flex; justify-content:center; padding:32px 20px 0 20px;" aria-hidden="false">
-      <figure id="top-product-figure" style="width:720px; max-width:100%; height:auto; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:transparent; margin:0;">
-        <img id="top-product-img" src="lotion.png" alt="Bio Shield Family Lotion" style="display:block; max-width:720px; width:100%; height:auto; border-radius:12px;">
-        <figcaption class="sr-only">Bio Shield Family Lotion product image</figcaption>
-      </figure>
+    <section class="hero" style="display:flex; justify-content:center; padding:32px 20px 0 20px; gap: 48px; flex-wrap: wrap; align-items: flex-start;" aria-hidden="false">
+      <!-- Family Lotion Product (Image + Info Centered) -->
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 720px; width: 100%;">
+        <figure id="top-product-figure" style="width:100%; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:transparent; margin:0;">
+          <img id="top-product-img" src="lotion.png" alt="Bio Shield Family Lotion" style="display:block; max-width:720px; width:100%; height:auto; border-radius:12px;">
+          <figcaption class="sr-only">Bio Shield Family Lotion product image</figcaption>
+        </figure>
+        <article id="product-card" role="region" aria-labelledby="product-title" style="width:100%; text-align:center; padding:48px 20px; background:#fff; border-radius:12px; transition: transform 0.3s; box-shadow: none; margin-top: 18px;">
+          <h1 style="font-size:28px; margin-bottom:10px;">Bio Shield Family Lotion (3oz) — "Smooth Defense"</h1>
+          <p style="font-size:18px; line-height:1.6; color:#333; margin-bottom:16px;">Protect your skin and nourish it. Our Family Lotion is perfect for kids and adults, combining gentle moisturizers with bug-repelling plant oils. It’s ideal for daily use — especially for sensitive skin.</p>
+          <h3 style="font-size:18px; margin-bottom:8px;">Why You’ll Love It:</h3>
+          <ul style="list-style:none; padding:0; line-height:1.8; font-size:16px;">
+            <li>👶 Kid-safe, dermatologist-tested</li>
+            <li>🧴 Dual-action: repels & moisturizes</li>
+            <li>🚫 No parabens, no synthetic chemicals</li>
+            <li>🐰 Cruelty-free & vegan-friendly</li>
+          </ul>
+          <a href="buynow.html" class="btn" style="font-size: 20px; padding: 12px 32px; margin-top: 12px; text-decoration: none; background: linear-gradient(90deg, #0f9d58, #10a22d); color: #fff; border-radius: 5px; display: inline-block;">Buy Now</a>
+        </article>
+      </div>
+      <!-- Our Products Box -->
+      <div style="align-self: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="background: rgba(255,255,255,0.98); border-radius: 22px; border: 2.5px solid #e0e0e0; box-shadow: 0 6px 32px rgba(0,0,0,0.13); padding: 22px 18px; color: #1a1a1a; font-size: 2.1rem; line-height: 1.5; text-align: center; min-width: 220px; max-width: 340px; margin: 0 12px;">
+          <span style="font-size: 2.3rem; font-weight: bold;">Our Products</span>
+        </div>
+      </div>
+      <!-- Bio Shield Spray Product (Image + Info Centered) -->
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 720px; width: 100%;">
+        <figure style="width:100%; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:transparent; margin:0;">
+          <img src="product 1.jpg" alt="Bio Shield Spray" style="display:block; max-width:720px; width:100%; height:auto; border-radius:12px;">
+          <figcaption class="sr-only">Bio Shield Spray product image</figcaption>
+        </figure>
+        <article style="width:100%; text-align:center; padding:48px 20px; background:#fff; border-radius:12px; transition: transform 0.3s; box-shadow: none; margin-top: 18px;">
+          <h1 style="font-size:28px; margin-bottom:10px;">Bio Shield Spray (4oz) — "The Natural Shield"</h1>
+          <p style="font-size:18px; line-height:1.6; color:#333; margin-bottom:16px;">A plant-powered formula that packs a punch. Bio Shield Spray blends citronella, eucalyptus, and lemongrass oils to give you up to 8 hours of protection from mosquitoes, ticks, and other unwanted pests.<br>
+            <strong>No DEET. No nonsense.</strong></p>
+          <h3 style="font-size:18px; margin-bottom:8px;">Why You’ll Love It:</h3>
+          <ul style="list-style:none; padding:0; line-height:1.8; font-size:16px;">
+            <li>🌱 Made with 100% essential oils</li>
+            <li>🕒 Long-lasting — up to 8 hours</li>
+            <li>🧴 Non-greasy, fast-drying formula</li>
+            <li>🌍 Eco-friendly packaging</li>
+          </ul>
+          <a href="buynow.html" class="btn" style="font-size: 20px; padding: 12px 32px; margin-top: 12px; text-decoration: none; background: linear-gradient(90deg, #0f9d58, #10a22d); color: #fff; border-radius: 5px; display: inline-block;">Buy Now</a>
+        </article>
+      </div>
     </section>
-
-    <section aria-labelledby="product-title" style="display:flex; justify-content:center;">
-  <article id="product-card" role="region" aria-labelledby="product-title" style="max-width:800px; text-align:center; padding:48px 20px; background:#fff; border-radius:12px; transition: transform 0.3s; box-shadow: none;">
-        <h1 style="font-size:28px; margin-bottom:10px;">Bio Shield Family Lotion (3oz) — "Smooth Defense"</h1>
-        <p style="font-size:18px; line-height:1.6; color:#333; margin-bottom:16px;">Protect your skin and nourish it. Our Family Lotion is perfect for kids and adults, combining gentle moisturizers with bug-repelling plant oils. It’s ideal for daily use — especially for sensitive skin.</p>
-        <h3 style="font-size:18px; margin-bottom:8px;">Why You’ll Love It:</h3>
-        <ul style="list-style:none; padding:0; line-height:1.8; font-size:16px;">
-          <li>👶 Kid-safe, dermatologist-tested</li>
-          <li>🧴 Dual-action: repels &amp; moisturizes</li>
-          <li>🚫 No parabens, no synthetic chemicals</li>
-          <li>🐰 Cruelty-free &amp; vegan-friendly</li>
-        </ul>
-      </article>
-    </section>
+    <!-- Product Details Sections (removed, now included above) -->
       <script>
         // Emphasize product card when scrolled past the image
         (function(){
