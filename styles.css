@@ -61,7 +61,7 @@ body {
       max-width: 900px;
       margin: 28px auto;
       padding: 24px;
-      background: #ffffffcc; /* slightly translucent white */
+
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.12);
       color: #1a1a1a;
@@ -80,4 +80,8 @@ body {
     .services-extensions-inner li p {
       margin: 8px 0 0 0;
       line-height: 1.5;
+    }
+
+    .flex {
+      display:flex;align-items: flex-start;
     }
